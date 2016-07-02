@@ -9,7 +9,6 @@
         android:layout_height="match_parent"
         tools:background="@color/statusChuteClosed">
 
-
         <ImageView
             android:id="@+id/statusIcon"
             android:layout_width="150dp"
