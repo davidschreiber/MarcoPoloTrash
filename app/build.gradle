@@ -34,6 +34,10 @@ android {
     }
 }
 
+kapt {
+    generateStubs true
+}
+
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
@@ -44,6 +48,7 @@ dependencies {
 
     compile 'com.jakewharton.threetenabp:threetenabp:1.0.3'
 
+    kapt 'com.android.databinding:compiler:2.1.2'
 
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
