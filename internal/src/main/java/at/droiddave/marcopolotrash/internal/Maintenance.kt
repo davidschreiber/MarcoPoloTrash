@@ -8,6 +8,10 @@ import org.threeten.bp.LocalTime
  */
 data class MaintenanceTime(val from: LocalTime, val until: LocalTime)
 
+fun MaintenanceTime.contains(time: LocalTime): Boolean {
+    return time >= this.from && time <= this.until
+}
+
 /**
  * Public interface of a time table holding trash chute suction times. During the suction time, the trash chute is closed.
  */
