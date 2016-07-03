@@ -8,7 +8,7 @@ import com.github.salomonbrys.kodein.lazyInstance
 
 class MainActivity : AppCompatActivity() {
 
-    val timeProvider by appKodein.lazyInstance<TimeProvider>()
+    val timeProvider by appKodein.lazyInstance<at.droiddave.marcopolotrash.internal.TimeProvider>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

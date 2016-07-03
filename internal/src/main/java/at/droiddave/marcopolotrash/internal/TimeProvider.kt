@@ -1,13 +1,12 @@
-package at.droiddave.marcopolotrash
+package at.droiddave.marcopolotrash.internal
 
 import org.threeten.bp.LocalTime
-
 
 interface TimeProvider {
     fun getCurrentTime(): LocalTime
 }
 
-class RealTimeProvider() : TimeProvider {
+internal class RealTimeProvider() : TimeProvider {
     override fun getCurrentTime(): LocalTime {
         return LocalTime.now()
     }
