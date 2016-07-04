@@ -66,6 +66,8 @@ class MaintenanceStatusPresenter(kodein: () -> Kodein) : MaintenanceStatusContra
  */
 class CurrentStatusActivity : AppCompatActivity(), MaintenanceStatusContract.View {
     private lateinit var binding: ActivityCurrentStatusBinding
+
+    // TODO Make the presenter injectable, so we can actually test UI only.
     private val presenter = MaintenanceStatusPresenter(appKodein)
 
     override fun onCreate(savedInstanceState: Bundle?) {
