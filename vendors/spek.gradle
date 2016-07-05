@@ -1,3 +1,5 @@
+// This is a hacked together build file which is required to integrate Spek via a git submodule.
+
 apply plugin: 'idea'
 apply plugin: 'kotlin'
 
