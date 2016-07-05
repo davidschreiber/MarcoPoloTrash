@@ -1,0 +1,3 @@
+[submodule "vendors/spek"]
+	path = vendors/spek
+	url = git@github.com:JetBrains/spek.git

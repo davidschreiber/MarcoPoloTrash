@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MarcoPoloTrash.iml" filepath="$PROJECT_DIR$/MarcoPoloTrash.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/internal/internal.iml" filepath="$PROJECT_DIR$/internal/internal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vendors/spek/spek-core/spek.iml" filepath="$PROJECT_DIR$/vendors/spek/spek-core/spek.iml" />
     </modules>
   </component>
 </project>

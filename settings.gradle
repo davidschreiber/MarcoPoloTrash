@@ -1,1 +1,7 @@
 include ':app', ':internal'
+
+include ':spek'
+def spek = project(':spek')
+
+spek.projectDir = new File(rootDir, 'vendors/spek/spek-core')
+spek.buildFileName = '../../spek.gradle'
