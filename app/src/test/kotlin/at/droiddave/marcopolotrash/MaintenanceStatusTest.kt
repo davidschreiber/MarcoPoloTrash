@@ -34,7 +34,7 @@ inline fun <reified T : Any> mock(): T = Mockito.mock(T::class.java)
 
  * @see [Testing documentation](http://d.android.com/tools/testing)
  */
-class ExampleUnitTest : Spek({
+class MaintenanceStatusTest : Spek({
     given("A CurrentStatusPresenter") {
         val presenter: MaintenanceStatusPresenter = MaintenanceStatusPresenter { mockKodein }
         var mockView: MaintenanceStatusContract.View = mock()
