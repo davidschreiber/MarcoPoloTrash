@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout android:id="@+id/activity_current_status"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/statusChuteClosed"
+        tools:context="at.droiddave.marcopolotrash.CurrentStatusActivity">
+
+
+        <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/cd_chute_maintenance_status_icon"
+            android:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_current_status"
+            app:layout_constraintLeft_toLeftOf="@+id/activity_current_status"
+            app:layout_constraintRight_toRightOf="@+id/activity_current_status"
+            app:layout_constraintTop_toTopOf="@+id/activity_current_status"
+            app:layout_constraintVertical_bias="0.32999998"
+            tools:src="@drawable/ic_cross" />
+
+        <TextView
+            android:id="@+id/mainStatusMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            app:layout_constraintLeft_toLeftOf="@+id/activity_current_status"
+            app:layout_constraintRight_toRightOf="@+id/activity_current_status"
+            app:layout_constraintTop_toBottomOf="@+id/statusIcon"
+            tools:text="@string/trash_chute_is_closed" />
+
+        <TextView
+            android:id="@+id/secondaryStatusMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/activity_current_status"
+            app:layout_constraintRight_toRightOf="@+id/activity_current_status"
+            app:layout_constraintTop_toBottomOf="@+id/mainStatusMessage"
+            tools:text="for the next 23 minutes, 55 seconds" />
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Marco Polo Trash</string>
+    <string name="cd_chute_maintenance_status_icon">Chute maintenance status icon</string>
+    <string name="trash_chute_is_open">Trash chute is open</string>
+    <string name="trash_chute_is_closed">Trash chute is closed</string>
+
+    <string name="still_open_for_minutes">Still open for %d minutes</string>
+    <string name="still_open_for_hours_minutes">Still open for %1$d hours and %2$d minutes</string>
+    <string name="opens_up_in_minutes">Opens up in %d minutes</string>
+    <string name="opens_up_in_minutes_hours">Opens up in %1$d hours and %2$d minutes</string>
+</resources>
